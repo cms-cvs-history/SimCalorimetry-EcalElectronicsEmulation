@@ -1,0 +1,21 @@
+#define an EcalSimRawData module, named 'ecalSimRawData'
+
+#simulation of raw data:
+module ecalSimRawData = EcalSimRawData {
+   string unsuppressedDigiProducer = "ecalUnsuppressedDigis"
+   string EBdigiCollection = ""
+   string EEdigiCollection = ""
+   string srProducer = "ecalDigis"
+   string EBSrFlagCollection = "ebSrflags"
+   string EESrFlagCollection = "eeSrFlags"
+   string trigPrimProducer = "ecalTriggerPrimitiveDigis"
+   string trigPrimDigiCollection = ""
+   string tcpDigiCollection = "formatTCP"
+   string writeMode = "ascii"
+   untracked bool tpVerbose = false
+   untracked bool xtalVerbose = false
+   untracked int32 dccNum = -1
+   untracked int32 tccNum = -1
+   untracked bool tcc2dccData = true
+   untracked bool srp2dccData = true
+}
