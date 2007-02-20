@@ -18,4 +18,5 @@ module ecalSimRawData = EcalSimRawData {
    untracked int32 tccNum = -1
    untracked bool tcc2dccData = true
    untracked bool srp2dccData = true
+   untracked int32 tccInDefaultVal = 0xffff
 }
