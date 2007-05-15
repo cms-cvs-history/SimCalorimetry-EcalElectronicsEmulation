@@ -21,4 +21,5 @@ module ecalSimRawData = EcalSimRawData {
    untracked bool fe2dccData = true
    untracked bool fe2tccData = true
    untracked int32 tccInDefaultVal = 0xffff
+   untracked string outputBaseName = "ecal"
 }

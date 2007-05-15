@@ -1,10 +1,8 @@
-module flat2digi = EcalFEtoDigi {
+module tccFlatToDigi = EcalFEtoDigi {
     untracked int32  SuperModuleId = -1 
-    untracked string FlatBaseName  = "data_in/ecal_tcc"
-    string DatabaseFileEB          = "TPG.txt"
-    string DatabaseFileEE          = ""    
+    untracked string FlatBaseName  = "ecal_tcc"
     untracked int32 SkipEvents     = 0
-    untracked bool doCompressEt    = true
+    untracked bool UseIdentityLUT  = false
     untracked bool debugPrintFlag  = false
 }
 
@@ -17,7 +15,7 @@ module flat2digi = EcalFEtoDigi {
 //   <FlatBaseName><TCCid>.txt
 //   where TCCid (37..72) is associated with the supermodule(s)
 // - <SkipEvents> number of initial bunch crossings to be skipped
-// - <doCompressEt> specifies whether energy compression 
-//   is to be performed 
+// - <UseIdentityLUT> specifies whether identity lut should
+//     effectively be used (eg for Et compression)
 // - <debugPrintFlag> is set for printing debugging information
 //---------------------------------------------------------------
