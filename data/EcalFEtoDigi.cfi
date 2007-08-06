@@ -1,9 +1,9 @@
 module tccFlatToDigi = EcalFEtoDigi {
-    untracked int32  SuperModuleId = -1 
-    untracked string FlatBaseName  = "ecal_tcc"
-    untracked int32 SkipEvents     = 0
-    untracked bool UseIdentityLUT  = false
-    untracked bool debugPrintFlag  = false
+    untracked int32  SuperModuleId  = -1 
+    untracked string FlatBaseName   = "ecal_tcc_"
+    untracked int32 FileEventOffset = 0
+    untracked bool UseIdentityLUT   = false
+    untracked bool debugPrintFlag   = false
 }
 
 //---------------------------------------------------------------
@@ -14,7 +14,7 @@ module tccFlatToDigi = EcalFEtoDigi {
 // - the (set of) file(s) must exist as
 //   <FlatBaseName><TCCid>.txt
 //   where TCCid (37..72) is associated with the supermodule(s)
-// - <SkipEvents> number of initial bunch crossings to be skipped
+// - <FileEventOffset> bunch crossing offset/shift to be set
 // - <UseIdentityLUT> specifies whether identity lut should
 //     effectively be used (eg for Et compression)
 // - <debugPrintFlag> is set for printing debugging information
