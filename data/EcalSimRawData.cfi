@@ -2,13 +2,13 @@
 
 #simulation of raw data:
 module ecalSimRawData = EcalSimRawData {
-   string unsuppressedDigiProducer = "ecalUnsuppressedDigis"
+   string unsuppressedDigiProducer = "simEcalUnsuppressedDigis"
    string EBdigiCollection = ""
    string EEdigiCollection = ""
-   string srProducer = "ecalDigis"
+   string srProducer = "simEcalDigis"
    string EBSrFlagCollection = "ebSrFlags"
    string EESrFlagCollection = "eeSrFlags"
-   string trigPrimProducer = "ecalTriggerPrimitiveDigis"
+   string trigPrimProducer = "simEcalTriggerPrimitiveDigis"
    string trigPrimDigiCollection = ""
    string tcpDigiCollection = "formatTCP"
    string writeMode = "ascii"
